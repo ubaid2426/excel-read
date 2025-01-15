@@ -16,3 +16,113 @@
 .animate-fade-in {
   animation: fadeIn 0.5s ease-out forwards;
 }
+
+/* Apply a global style for body and html */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;  /* Ensure the body takes up the full height */
+  width: 100%;   /* Ensure the body takes up the full width */
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom right, #3b82f6, #1e40af); /* Blue gradient background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Make sure the container div takes full screen height and width */
+#root {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styling for the main content container */
+.bg-white {
+  background-color: white;
+  border-radius: 15px;
+  padding: 3rem;
+  width: 100%;
+  max-width: 400px;  /* Adjust to a max width */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Styling for the header */
+.text-5xl {
+  font-size: 3rem; /* Large font size */
+  color: white;
+  font-weight: bold;
+}
+
+.text-blue-100 {
+  color: #d1d5db;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+}
+
+.animate-fade-in {
+  animation: fadeIn 3s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Styling for the file upload button */
+.flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  margin-top: 1rem;
+  padding: 12px 24px;
+  background-color: #3b82f6;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #2563eb;
+}
+
+button:disabled {
+  background-color: #9ca3af;
+  cursor: not-allowed;
+}
+
+/* Response message styling */
+.text-sm {
+  font-size: 0.875rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-red-500 {
+  color: #ef4444;  /* Red for error */
+}
+
+.text-green-500 {
+  color: #10b981;  /* Green for success */
+}
+
+/* Styling for the file input */
+input[type="file"] {
+  display: none;
+}
